@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supriyo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="heading">
+      <div class="logo">
+        <h1>O <span>G</span></h1>
+      </div>
+      <nav class="navbar">
+        <a href="#" id="show" class="active">Home</a>
+        <a href="#" id="show">Information</a>
+        <a href="#" id="show">Members</a>
+        <a href="#" id="show">Contact</a>
+        <a href="#" onclick="showSidebar();" class="menu"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -1200 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            /></svg
+        ></a>
+      </nav>
+      <nav class="sidebar">
+        <a href="#" onclick="hideSidebar();"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -1200 960 960"
+            width="24px"
+            fill="#e8eaed"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></a>
+        <a href="#" class="active">Home</a>
+        <a href="#">Information</a>
+        <a href="#">Members</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <!--Sliding navbar-->
+    <nav class="slide">
+      <a href="#" id="show" class="active">Home</a>
+      <a href="#" id="show">Information</a>
+      <a href="#" id="show">Members</a>
+      <a href="#" id="show">Contact</a>
+    </nav>
+
+    <section class="home">
+      <div class="home-contents">
+        <h1>OKIE <span class="grp">GROUP</span></h1>
+        <h3>Where all the crazy people are gathered</h3>
+        <p>
+          The okie group was formed in the early days of elementary school when
+          a group of twelve children from the same neighborhood and school began
+          to bond over shared interests and adventures. Their connection was
+          instantaneous, marked by a collective love for imaginative play,
+          outdoor exploration, and creative projects.
+        </p>
+      </div>
+
+      <div class="image-box">
+        <img src="okie.jpg" />
+      </div>
+    </section>
+    <!--
+    <section class="members">
+      <div class="text">
+        <h1>Members</h1>
+      </div>
+      <div class="images">
+        <img class="me" id="supriyo" src="me.jpg">
+        <img class="me" id="debongshi" src ="debongshi.jpg">
+        <img class="me" id="aongkon" src="aongkon.jpg">
+    </section>
+-->
+    <script src="app.js"></script>
+  </body>
+</html>
+
+  </body>
+</html>

@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  list-style: none;
+  text-decoration: none;
+}
+.heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 5%;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 18px;
+}
+span {
+  color: orangered;
+}
+
+.navbar a {
+  right: 0;
+  font-size: 18px;
+  color: white;
+  margin: 0 12px;
+  border-bottom: 3px solid transparent;
+}
+.menu {
+  display: none;
+}
+.navbar a:hover,
+.navbar a.active {
+  border-bottom: 3px solid orangered;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: black;
+  display: none;
+}
+.sidebar a {
+  font-size: 18px;
+  color: white;
+  margin: 0 12px;
+  border-bottom: 3px solid transparent;
+  line-height: 40px;
+}
+.sidebar a:hover,
+.sidebar a.active {
+  border-bottom: 3px solid orangered;
+}
+.home {
+  background-color: white;
+  display: flex;
+  min-height: 100vh;
+  padding: 100px 12% 0;
+  width: 100%;
+  align-items: center;
+  gap: 7em;
+}
+.home-contents {
+  max-width: 800px;
+}
+.home-contents h1 {
+  font-size: 80px;
+  padding-bottom: 12px;
+  transition: 1s ease;
+}
+.home-contents h1:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 3px #424242, 0 0 3px #424242;
+}
+.home-contents h3 {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.home-contents p {
+  margin: 20px 0 30px;
+}
+.image-box img {
+  width: 500px;
+  transition: 1s ease;
+  position: static;
+}
+.image-box img:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  text-align: center;
+  font-size: 70px;
+  padding-bottom: 50px;
+}
+
+.images {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8em;
+}
+.images img.me {
+  width: 400px;
+  border: 6px solid white;
+  box-shadow: 0 0 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    display: block;
+  }
+  #show {
+    display: none;
+  }
+  .home {
+    flex-direction: column;
+    gap: 3em;
+  }
+  .image-box img {
+    width: 290px;
+  }
+}
