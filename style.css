@@ -135,4 +135,12 @@ span {
   .image-box img {
     width: 290px;
   }
+  .home-contents p {
+    margin: 50px 0 87px;
+  }
+  .home-contents h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 10px 0 0;
+  }
 }
